@@ -20,7 +20,7 @@ export default class MaxLayout extends Vue {
     this.$trackClickEvent(`${e.detail?.label?.toLowerCase()}`, 'menu')
   }
 
-  isLearnPage: boolean = this.$route.path === '/learn/course'
+  isLearnPage: boolean = this.$route.path === '/learn' || this.$route.path.includes('/learn/course')
 }
 </script>
 
