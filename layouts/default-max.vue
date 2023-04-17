@@ -1,6 +1,8 @@
 <template>
   <div>
-    <qiskit-ui-shell v-if="isLearnPage" @on-click="onClick" />
+    <qiskit-ui-shell v-if="isLearnPage" @on-click="onClick">
+      <qiskit-header-menu-mega menu-label="Providers" trigger-content="Providers" role="listitem" />
+    </qiskit-ui-shell>
     <qiskit-ui-shell v-else variant="hide-account" @on-click="onClick" />
     <div class="main-container">
       <nuxt />
