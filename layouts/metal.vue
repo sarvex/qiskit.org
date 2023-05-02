@@ -19,7 +19,10 @@
   color: qiskit.$text-color-lighter-2;
 }
 
-:deep(h3) {
+:deep(h3),
+// Temporary solution until we figure out the dev/prod discrepancy
+:deep(.link_secondary),
+:deep(.link_secondary:visited) {
   color: qiskit.$text-color-white;
 }
 </style>
